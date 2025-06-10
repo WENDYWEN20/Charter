@@ -3,7 +3,7 @@ import { sleep } from "../util/sleep";
 
 // GET customers
 export const getCustomers = async () => {
-  //await sleep(1000);
+  // await sleep(1000);
   return customersData;
 };
 

@@ -33,9 +33,9 @@ function App() {
     to: new Date(),
   });
 
-  if (isCustomerLoading || isRewardsLoading) {
-    return <div>Loading...</div>;
-  }
+  // if (isCustomerLoading || isRewardsLoading) {
+  //   return <div>Loading...</div>;
+  // }
 
   if (isCustomerError) {
     return <div>Error loading customer data: {customerError}</div>;
@@ -48,8 +48,14 @@ function App() {
   return (
     <div>
       <SearchCustomerForm onSubmit={setCurrentCustomerId} />
-      <CustomerProfile customer={customer} />
-      <CustomerRewards rewards={rewards} />
+      {isCustomerLoading || isRewardsLoading ? (
+        <p>Content Loading</p>
+      ) : (
+        <div>
+          <CustomerProfile customer={customer} />
+          <CustomerRewards rewards={rewards} />
+        </div>
+      )}
     </div>
   );
 }

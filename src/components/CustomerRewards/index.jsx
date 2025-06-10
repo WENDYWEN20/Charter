@@ -13,7 +13,7 @@ export default function CustomerRewards({ rewards }) {
     <section className="rewards-container">
       <h2>Rewards Summary</h2>
       <h4>Three Months total: {threeMonthsTotal} pt</h4>
-      {rewards.map((reward) => {
+      {rewards?.map((reward) => {
         const { period, total, transactions } = reward;
         return (
           <div key={period} className="reward-period">

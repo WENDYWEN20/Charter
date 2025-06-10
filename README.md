@@ -41,8 +41,9 @@ Clone the repo: git clone <repo-url>
 Install dependencies: npm install
 
 
+# Run dev server: npm run dev
 
-Run dev server: npm run dev
+
 
 
 

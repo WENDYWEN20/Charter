@@ -32,12 +32,6 @@ React
 
 
 
-Tailwind CSS
-
-Setup
-
-
-
 
 
 Clone the repo: git clone <repo-url>
@@ -56,7 +50,7 @@ Open: http://localhost:5173
 
 Data
 
-Mock data in src/data/transactions.js includes three customers with transactions for January–March 2025. The solution dynamically extracts months from transaction dates.
+Mock data in src/data/transactions.js includes four customers with transactions for April to Jun 2025. The solution dynamically extracts months from transaction dates.
 
 Calculation Logic
 
@@ -70,10 +64,4 @@ src/utils/calculatePoints.js computes points per transaction and aggregates by c
 
 Example: $120 = 50 points ($51–$100) + 40 points ($101–$120) = 90 points.
 
-
-
 Months are derived from transaction dates and sorted chronologically.
-
-GitHub
-
-The project is hosted at <repo-url>.
